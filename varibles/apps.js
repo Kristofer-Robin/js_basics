@@ -1,9 +1,14 @@
 // kasutaja sisen
-let kordamise_arv = Number(promt('Sisestage mitu korda äratada'))
-
-let kord = 1 // tsükli juhtimismuutuja algväärtus
-// korduvad tegevused
-while(kord <= kordamise_arv){
-    console.log(`Tõuse ja sära - ${kord}. kord`)
-    kord++
+let ringideArv = Number(promt('Sisestage ringide arv'))
+let porgandidKokku = 0
+let ring = 1
+while(ring <= ringideArv){
+    console.log('${ring}. ring')
+    if(ring % 2 == 0){
+        // console.log('Saab ${ring} porgandit')
+        porgandidKokku = porgandidKokku + ring // porgandidKokku += ring
+        // console.log(porgandidKokku)
+    }
+    ring++
 }
+console.log('Porgandite koguarv on ${porgandidKokku}.')
