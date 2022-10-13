@@ -1,9 +1,7 @@
-// kasutaja sisen
-let kordamise_arv = Number(promt('Sisestage mitu korda äratada'))
+let astmeAlus = "8";
+let aste = "2";
 
-let kord = 1 // tsükli juhtimismuutuja algväärtus
-// korduvad tegevused
-while(kord <= kordamise_arv){
-    console.log(`Tõuse ja sära - ${kord}. kord`)
-    kord++
-}
+let result = Math.pow(astmeAlus, aste);
+
+console.log(typeof result);
+console.log(result);
