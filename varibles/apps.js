@@ -1,6 +1,3 @@
-
-let aasta = "2021. ";
-let president = "Alar Karis";
-let lause_keskosa = "aastal valiti presidendiks ";
-let lause = (aasta + lause_keskosa + president);
-console.log(lause);
+let x = prompt("Sisesta väärtus",0 );
+let y = prompt("Sisesta aste",0);
+console.log(Math.pow(x,y));
