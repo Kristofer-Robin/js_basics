@@ -1,3 +1,4 @@
-let x = prompt("Sisesta väärtus",0 );
-let y = prompt("Sisesta aste",0);
-console.log(Math.pow(x,y));
+const nimi = prompt("Sisestage oma nimi");
+let lubatud = prompt("Sisestage lubatud kiirus", 0);
+let tegelik = prompt("Sisestage tegelik kiirus",0);
+console.log(nimi + ",","kiiruse ületamise eest on teie trahv", (tegelik - lubatud)*3, "\u20AC");
