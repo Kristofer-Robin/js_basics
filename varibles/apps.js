@@ -1,11 +1,14 @@
-// kasutaja sisend
-let poialpoisid = number(prompt('Mitu pöialpoisi tahab õunu'))
-let lumivalgeke0unad = 14
-let poialpoiss = 1
-while(poialpoiss <= poialpoisid){
-    let ounad = Math.ceil(Math.random() * 2)
-    console.log(ounad)
-    lumivalgeke0unad = lumivalgeke0unad - ounad
-    poialpoiss++
+// kasutaja sisen
+let ringideArv = Number(promt('Sisestage ringide arv'))
+let porgandidKokku = 0
+let ring = 1
+while(ring <= ringideArv){
+    console.log('${ring}. ring')
+    if(ring % 2 == 0){
+        // console.log('Saab ${ring} porgandit')
+        porgandidKokku = porgandidKokku + ring // porgandidKokku += ring
+        // console.log(porgandidKokku)
+    }
+    ring++
 }
-console.log(`Lumivalgekesel jäi ${lumivalgeke0unad}`)
+console.log('Porgandite koguarv on ${porgandidKokku}.')
