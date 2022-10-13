@@ -1,14 +1,22 @@
-// kasutaja sisen
-let ringideArv = Number(promt('Sisestage ringide arv'))
-let porgandidKokku = 0
-let ring = 1
-while(ring <= ringideArv){
-    console.log('${ring}. ring')
-    if(ring % 2 == 0){
-        // console.log('Saab ${ring} porgandit')
-        porgandidKokku = porgandidKokku + ring // porgandidKokku += ring
-        // console.log(porgandidKokku)
+let valik = Number(prompt('Kas soovid istekohta ise valida +
+"ise" või loosida "loos"'))
+
+if(valik == 'ise'){
+    let kohtValik = prompt('Kas soovite istuda akna ääres +
+    "aken" või muu "muu"')
+    console.log('Valisite ise.')
+    if(kohaValik == 'aken'){
+        koht = 'Aknakoht.'
+    } else if(kohaValik == 'muu'){
+        koht = 'Vahekäigukoht.'
     }
-    ring++
+} else if(valik == 'loos'){
+    console.log('Istekoht loositi.')
+    let juhuarv = Math.ceil(Math.random() * 3)
+    if(juhuarv == 1) {
+        koht = 'Aknakoht.'
+    } else {
+        koht = 'Vahekäigukoht.'
+    }
 }
-console.log('Porgandite koguarv on ${porgandidKokku}.')
+console.log(koht)
