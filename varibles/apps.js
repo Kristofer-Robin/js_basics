@@ -1,4 +1,10 @@
-let eap = prompt("Sisestage ainepunktide arv");
-let nadal = prompt("Sisestage nädalate arv");
-let ajakulu = (eap * 26 / nadal);
-console.log("Nädala eeldatav ajakulu on", Math.round(ajakulu,0),"h");
+let inimesteArv = prompt("Sisestage inimeste arv",0)
+let bussiKohad = 50
+let bussideArv = Math.floor(inimesteArv/bussiKohad)
+let inimesteJaak = inimesteArv % bussiKohad
+console.log("Bussis on", bussiKohad, "kohta, inimesi mahtus bussidesse ", bussideArv * bussiKohad,"seega teile tuleb järgi ",
+    bussideArv, "bussi ning maha jääb", inimesteJaak, "inimest.")
+if(inimesteJaak == 0){
+    console.log("Bussis on", bussiKohad, "kohta, inimesi mahtus bussidesse ", bussideArv * bussiKohad,"seega teile tuleb järgi ",
+        bussideArv, "bussi")
+}
