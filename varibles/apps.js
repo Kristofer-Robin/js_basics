@@ -1,15 +1,4 @@
-for (let nimi = algvaartus; nimi < loppvaartus, number++(?)){
-    tegevused, mis sooritatakse korduvalt}
-for (let number = 1; number <= 10; number++){
-    if(number == 5){
-        //console.log(number)
-        //break;
-        continue;
-    }
-    console.log(number)
-}
-let kord = 1
-while(kord <= 10){
-    console.log(kord)
-    kord++
-}
+let eap = prompt("Sisestage ainepunktide arv");
+let nadal = prompt("Sisestage nädalate arv");
+let ajakulu = (eap * 26 / nadal);
+console.log("Nädala eeldatav ajakulu on", Math.round(ajakulu,0),"h");
