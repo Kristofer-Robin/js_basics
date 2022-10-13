@@ -1,8 +1,9 @@
-// kasutaja sisend
-let temperatuur = Number(prompt('Sisesta õhutemperatuur'))
-// kontroll ja väljastus
-if(temp > 4.0){
-    console.log('Ei ole jäätumise ohtu')
-} else {
-    console.log('On jäätumise oht')
+// kasutaja sisen
+let kordamise_arv = Number(promt('Sisestage mitu korda äratada'))
+
+let kord = 1 // tsükli juhtimismuutuja algväärtus
+// korduvad tegevused
+while(kord <= kordamise_arv){
+    console.log(`Tõuse ja sära - ${kord}. kord`)
+    kord++
 }
