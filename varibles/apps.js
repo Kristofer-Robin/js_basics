@@ -1,8 +1,11 @@
 // kasutaja sisend
-let temperatuur = Number(prompt('Sisesta õhutemperatuur'))
-// kontroll ja väljastus
-if(temp > 4.0){
-    console.log('Ei ole jäätumise ohtu')
-} else {
-    console.log('On jäätumise oht')
+let poialpoisid = number(prompt('Mitu pöialpoisi tahab õunu'))
+let lumivalgeke0unad = 14
+let poialpoiss = 1
+while(poialpoiss <= poialpoisid){
+    let ounad = Math.ceil(Math.random() * 2)
+    console.log(ounad)
+    lumivalgeke0unad = lumivalgeke0unad - ounad
+    poialpoiss++
 }
+console.log(`Lumivalgekesel jäi ${lumivalgeke0unad}`)
