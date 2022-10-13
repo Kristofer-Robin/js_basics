@@ -1,4 +1,15 @@
-const nimi = prompt("Sisestage oma nimi");
-let lubatud = prompt("Sisestage lubatud kiirus", 0);
-let tegelik = prompt("Sisestage tegelik kiirus",0);
-console.log(nimi + ",","kiiruse ületamise eest on teie trahv", (tegelik - lubatud)*3, "\u20AC");
+for (let nimi = algvaartus; nimi < loppvaartus, number++(?)){
+    tegevused, mis sooritatakse korduvalt}
+for (let number = 1; number <= 10; number++){
+    if(number == 5){
+        //console.log(number)
+        //break;
+        continue;
+    }
+    console.log(number)
+}
+let kord = 1
+while(kord <= 10){
+    console.log(kord)
+    kord++
+}
