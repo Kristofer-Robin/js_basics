@@ -1,7 +1,6 @@
-let astmeAlus = "8";
-let aste = "2";
 
-let result = Math.pow(astmeAlus, aste);
-
-console.log(typeof result);
-console.log(result);
+console.log("1")
+console.log("2")
+console.log("3")*/
+/*1.1
+console.log("Hello World");
